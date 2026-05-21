@@ -545,8 +545,8 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
     });
   });
 
-  // Formspree endpoint — replace YOUR_ID with your actual form ID from formspree.io
-  const API_ENDPOINT = '/api/submit';
+  // Formspree endpoint
+  const API_ENDPOINT = 'https://formspree.io/f/mredqydq';
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -560,7 +560,8 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
       requirement: form.querySelector('.chips[data-name="requirement"] .on')?.textContent?.trim() || '',
       name: form.name.value.trim(),
       email: form.email.value.trim(),
-      _subject: 'Vertiv AI Hub · нова заявка з лендінгу'
+      _subject: 'Vertiv AI Hub · нова заявка з лендінгу',
+      _replyto: form.email.value.trim()
     };
 
     submitBtn.disabled = true;
@@ -569,7 +570,7 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
     try {
       const response = await fetch(API_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
       });
 
