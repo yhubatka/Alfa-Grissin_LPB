@@ -1,111 +1,5 @@
 <!doctype html>
-<html lang="uk"> <!-- Canonical + OG URL -->
-<link rel="canonical" href="https://alfa-grissin-lpb.vercel.app/">
-<meta property="og:url" content="https://alfa-grissin-lpb.vercel.app/">
-
-<!-- OG Image (створи og-image.jpg 1200x630 і завантаж у корінь репо) -->
-<meta property="og:image" content="https://alfa-grissin-lpb.vercel.app/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Alpha Grissin · Vertiv AI Hub — інженерна інфраструктура для AI-навантажень">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alpha Grissin · Vertiv AI Hub">
-<meta name="twitter:description" content="Один підрядник. Весь AI-стек. Від CDU до GPU-оптики 800G.">
-<meta name="twitter:image" content="https://alfa-grissin-lpb.vercel.app/og-image.jpg">
-
-<!-- Schema.org: Organization + Service (AEO для AI-пошуку) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://alphagrissin.ua/#organization",
-      "name": "Alpha Grissin Infotech Ukraine",
-      "alternateName": "Alpha Grissin",
-      "url": "https://alphagrissin.ua",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://alphagrissin.ua/wp-content/themes/alphagrissin/img/logo.png"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+38-044-251-78-23",
-        "email": "office@alphagrissin.ua",
-        "contactType": "sales",
-        "areaServed": "UA",
-        "availableLanguage": ["Ukrainian", "English"]
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "вул. Сосюри 6, оф. 201, БЦ «Прага»",
-        "addressLocality": "Київ",
-        "addressCountry": "UA"
-      },
-      "foundingDate": "2001",
-      "numberOfEmployees": {"@type": "QuantitativeValue", "value": 30},
-      "sameAs": ["https://alphagrissin.ua"]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://alfa-grissin-lpb.vercel.app/#aihub-service",
-      "name": "Vertiv AI Hub — повний стек AI-інфраструктури",
-      "description": "Інтегрована інженерна інфраструктура для GPU-кластерів NVIDIA H100/H200/GB200. Рідинне охолодження CDU/DLC, AI-UPS Liebert, оптика 800G, DCIM Trellis, резервна генерація Cummins — один контракт, 14 тижнів до commissioning.",
-      "provider": {"@id": "https://alphagrissin.ua/#organization"},
-      "areaServed": {"@type": "Country", "name": "Ukraine"},
-      "serviceType": "Data Center Engineering",
-      "offers": {
-        "@type": "Offer",
-        "description": "Інженерна консультація — відповідь протягом 1 робочого дня",
-        "availability": "https://schema.org/InStock"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "AI Hub Stack",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Рідинне охолодження CDU/DLC", "description": "Vertiv Liebert XDU, до 1000 кВт на rack-row, PUE 1.18"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "High-density стійки", "description": "Vertiv VRC, до 500 кВт, NVIDIA HGX ready"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-оптимізований UPS", "description": "Vertiv Liebert EXM2/APM, 2N+1, < 2ms transient"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "DCIM для AI-кластера", "description": "Vertiv Trellis, per-GPU моніторинг"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GPU-оптика 800G", "description": "HUBER+SUHNER NDR IB / 800GbE, 480ns latency"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Резервна генерація", "description": "Cummins diesel+gas+BESS, 96h автономія"}}
-        ]
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Що таке Vertiv AI Hub від Alpha Grissin?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vertiv AI Hub — це повний стек інженерної інфраструктури для GPU-кластерів: рідинне охолодження CDU/DLC, AI-оптимізований UPS Liebert, оптика 800G від HUBER+SUHNER, DCIM Trellis та резервна генерація Cummins. Alpha Grissin постачає всі компоненти за єдиним контрактом з введенням в експлуатацію за 14 тижнів."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Чи відповідає рішення вимогам НБУ та DORA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Так. Рішення Alpha Grissin сертифіковані та відповідають: НБУ Постанова 143/2025 (DORA-aligned), TIA-942 Tier III, ISO 27001, NIS2. Генератори Cummins сертифіковані для українського grid."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Як швидко Alpha Grissin може розгорнути AI Hub?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Стандартний термін розгортання повного AI Hub стеку — 14 тижнів від підписання контракту до commissioning. Це у 3–4 рази швидше за класичну схему з 5–7 підрядниками (9–12 місяців)."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
+<html lang="uk">
 <head>
 <meta charset="utf-8" />
 <title>Alpha Grissin · Vertiv AI Hub — інженерна інфраструктура для AI-навантажень</title>
@@ -366,6 +260,35 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
   .foot .bottom { flex-direction: column; gap: 8px; text-align: center;}
 }
 </style>
+
+<link rel="canonical" href="https://alfa-grissin-lpb.vercel.app/">
+<meta property="og:url" content="https://alfa-grissin-lpb.vercel.app/">
+<meta property="og:image" content="https://alfa-grissin-lpb.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Alpha Grissin · Vertiv AI Hub — AI-інфраструктура для GPU-кластерів">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alpha Grissin · Vertiv AI Hub">
+<meta name="twitter:description" content="Один підрядник. Весь AI-стек. Від CDU до GPU-оптики 800G.">
+<meta name="twitter:image" content="https://alfa-grissin-lpb.vercel.app/og-image.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"Organization","@id":"https://alphagrissin.ua/#org","name":"Alpha Grissin Infotech Ukraine",
+   "url":"https://alphagrissin.ua","foundingDate":"2001",
+   "contactPoint":{"@type":"ContactPoint","telephone":"+38-044-251-78-23","email":"office@alphagrissin.ua","contactType":"sales","areaServed":"UA","availableLanguage":["Ukrainian","English"]},
+   "address":{"@type":"PostalAddress","streetAddress":"вул. Сосюри 6, оф. 201, БЦ «Прага»","addressLocality":"Київ","addressCountry":"UA"},
+   "sameAs":["https://alphagrissin.ua"]},
+  {"@type":"Service","@id":"https://alfa-grissin-lpb.vercel.app/#aihub",
+   "name":"Vertiv AI Hub — повний стек AI-інфраструктури",
+   "description":"Інтегрована інженерна інфраструктура для GPU-кластерів NVIDIA H100/H200/GB200. CDU/DLC охолодження, AI-UPS Liebert, оптика 800G, DCIM Trellis, генерація Cummins. 14 тижнів до commissioning.",
+   "provider":{"@id":"https://alphagrissin.ua/#org"},"areaServed":{"@type":"Country","name":"Ukraine"},"serviceType":"Data Center Engineering"},
+  {"@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Що таке Vertiv AI Hub від Alpha Grissin?","acceptedAnswer":{"@type":"Answer","text":"Повний стек AI-інфраструктури: CDU/DLC охолодження, AI-UPS Liebert, оптика 800G HUBER+SUHNER, DCIM Trellis, генерація Cummins. Один контракт, 14 тижнів до commissioning."}},
+    {"@type":"Question","name":"Чи відповідає рішення вимогам НБУ та DORA?","acceptedAnswer":{"@type":"Answer","text":"Так. НБУ 143/2025, TIA-942 Tier III, ISO 27001, NIS2."}},
+    {"@type":"Question","name":"Як швидко розгортається AI Hub?","acceptedAnswer":{"@type":"Answer","text":"14 тижнів — у 3–4 рази швидше класичної схеми (9–12 місяців з 5–7 підрядниками)."}}
+  ]}
+]}
+</script>
 </head>
 <body>
 
@@ -380,7 +303,7 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
     <a href="#contact">Контакт</a>
   </div>
   <div class="actions">
-    <span class="lang"><b>UA</b> / EN</span>
+    <span class="lang"><span id="btn-ua" onclick="switchLang('uk')" style="cursor:pointer;font-weight:700;color:var(--text)">UA</span> / <span id="btn-en" onclick="switchLang('en')" style="cursor:pointer;color:var(--text-2)">EN</span></span>
     <a href="#contact" style="text-decoration:none;"><button class="btn-primary">Консультація <span class="arr">→</span></button></a>
   </div>
 </nav>
@@ -623,7 +546,7 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
   });
 
   // Formspree endpoint — replace YOUR_ID with your actual form ID from formspree.io
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_ID';
+  const API_ENDPOINT = '/api/submit';
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -632,11 +555,11 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
     const originalText = submitBtn.innerHTML;
 
     const data = {
-      type: form.querySelector('.chips[data-name="type"] .on')?.textContent || '',
-      racks: form.querySelector('.chips[data-name="racks"] .on')?.textContent || '',
-      requirement: form.querySelector('.chips[data-name="requirement"] .on')?.textContent || '',
-      name: form.name.value,
-      email: form.email.value,
+      objectType: form.querySelector('.chips[data-name="type"] .on')?.textContent?.trim() || '',
+      gpuCount: form.querySelector('.chips[data-name="racks"] .on')?.textContent?.trim() || '',
+      requirement: form.querySelector('.chips[data-name="requirement"] .on')?.textContent?.trim() || '',
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
       _subject: 'Vertiv AI Hub · нова заявка з лендінгу'
     };
 
@@ -644,9 +567,9 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
     submitBtn.innerHTML = 'Надсилаємо...';
 
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch(API_ENDPOINT, {
         method: 'POST',
-        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
 
@@ -664,5 +587,197 @@ html, body { margin:0; padding:0; font-family:"IBM Plex Sans",system-ui,sans-ser
   }
 </script>
 
+
+<script>
+/* ──────────────────────────────────────────
+   AG LANDING · UA / EN Language Switch
+   Uses innerHTML for rich elements,
+   textContent for plain text.
+────────────────────────────────────────── */
+const LANG = {
+  uk: {
+    h1: 'Один підрядник.<br/>Весь <em>AI‑стек</em>.<br/>Від CDU до <span class="heat">GPU-оптики</span>.',
+    sub: 'Інтегрована інженерна інфраструктура для GPU-кластерів NVIDIA H100/H200/GB200. Рідинне охолодження, AI‑UPS, оптика 800G, DCIM для кластера, резервна генерація — у єдиному контракті. <b>Під ваше завдання — не під каталог.</b>',
+    heroBtn1: 'Отримати інженерну консультацію <span class="arr">→</span>',
+    heroBtn2: 'Завантажити datasheet',
+    heroCmeta: '<b>1 раб. день</b> на відповідь · без тендерних зобов'язань',
+    probEye: '02 · ПРОБЛЕМА → РІШЕННЯ',
+    probH2: 'Ваш ЦОД <em>не готовий</em> до 100 кВт/стійку.',
+    probP: 'Класичний ЦОД проектувався під 3–5 кВт. GPU-кластер генерує у 20 разів більше тепла. Це не апгрейд — це нова архітектура.',
+    stackEye: '03 · ПОВНИЙ СТЕК',
+    stackH2: 'Шість підсистем. <em>Один контракт.</em>',
+    stackP: 'Кожен компонент — від світового вендора з прямим партнерським контрактом Alpha Grissin. Інтеграція й SLA — на нас.',
+    card1h: 'Рідинне охолодження CDU/DLC',
+    card1d: 'Direct-to-chip охолодження для AI-навантажень. Знімає 100+ кВт/стійку без перевантаження CRAC. Загальносистемний PUE 1.18.',
+    card2h: 'High-density стійки',
+    card2d: 'Конструктив під DLC manifold + 750A busway. Сумісність із NVIDIA HGX H100/H200/GB200 — out-of-the-box.',
+    card3h: 'AI-оптимізований UPS',
+    card3d: 'Захист транзієнтів GPU 200–400 А/мс. Класичний UPS не встигає за пульсаціями training-навантажень — Liebert встигає.',
+    card4h: 'DCIM для AI-кластера',
+    card4d: 'Моніторинг до окремої GPU-карти. Capacity-планування, теплова мапа, втрати, утилізація — в одному вікні.',
+    card5h: 'GPU-оптика 800G',
+    card5d: 'High-speed fiber interconnect для NVIDIA Quantum-2 / Spectrum-X. MTP/MPO patching, sub-µs latency, оптимізовано під all-reduce.',
+    card6h: 'Резервна генерація',
+    card6d: 'Гібрид diesel + gas + battery energy storage для миттєвого підхвату. Сертифіковано для українського grid та НБУ-вимог.',
+    casesEye: '04 · РЕАЛІЗОВАНО В УКРАЇНІ',
+    casesH2: "Об'єкти, що <em>працюють</em>.",
+    casesP: "Не PowerPoint, а реальні майданчики з реальним PUE. Be Mobile — найбільший комерційний ЦОД України. United DC — Tier-3 TIA-942. GigaCenter — ТОП-3 ЦОД.",
+    formH: 'Інженерна <em>консультація</em>',
+    formLede: 'Відповімо протягом <b>1 робочого дня</b>. Без тендерних зобов'язань.',
+    formL1: "01 · Тип об'єкта <b>*</b>",
+    formL2: '02 · GPU-стійок <b>*</b>',
+    formL3: '03 · Ключова вимога <b>*</b>',
+    formL4: '04 · Контакт <b>*</b>',
+    formName: "Ім'я", formEmail: 'Email',
+    formBtn: 'Надіслати запит <span class="arr">→</span>',
+    formGdpr: 'Дані — лише для відповіді. GDPR · DORA · НБУ 143/2025.',
+    navLinks: ['Платформа','Стек',"Об'єкти",'Compliance','Контакт'],
+    navBtn: 'Консультація <span class="arr">→</span>',
+    footDesc: 'Інженерний інтегратор, 25 років. Vertiv AI Hub — повний стек AI-інфраструктури від одного підрядника.',
+  },
+  en: {
+    h1: 'One contractor.<br/>Full <em>AI‑stack</em>.<br/>From CDU to <span class="heat">GPU optics</span>.',
+    sub: 'Integrated engineering infrastructure for NVIDIA H100/H200/GB200 GPU clusters. Liquid cooling, AI‑UPS, 800G optics, DCIM, backup generation — one contract. <b>Engineered for your task — not for a catalogue.</b>',
+    heroBtn1: 'Get Engineering Consultation <span class="arr">→</span>',
+    heroBtn2: 'Download Datasheet',
+    heroCmeta: '<b>1 business day</b> response · no tender obligations',
+    probEye: '02 · PROBLEM → SOLUTION',
+    probH2: 'Your DC is <em>not ready</em> for 100 kW/rack.',
+    probP: 'Classic DCs were designed for 3–5 kW/rack. A GPU cluster generates 20× more heat. This is not an upgrade — it is a new architecture.',
+    stackEye: '03 · FULL STACK',
+    stackH2: 'Six subsystems. <em>One contract.</em>',
+    stackP: 'Every component from a world-class vendor with a direct Alpha Grissin partnership. Integration and SLA — our responsibility.',
+    card1h: 'Liquid Cooling CDU/DLC',
+    card1d: 'Direct-to-chip cooling for AI workloads. Removes 100+ kW/rack without overloading CRAC. System-wide PUE 1.18.',
+    card2h: 'High-density Cabinets',
+    card2d: 'Built for DLC manifold + 750A busway. NVIDIA HGX H100/H200/GB200 compatible out-of-the-box.',
+    card3h: 'AI-optimised UPS',
+    card3d: 'GPU transient protection 200–400 A/ms. Standard UPS cannot keep up with training load pulses — Liebert can.',
+    card4h: 'DCIM for AI Clusters',
+    card4d: 'Per-GPU monitoring. Capacity planning, thermal mapping, losses, utilisation — in one window.',
+    card5h: 'GPU Optics 800G',
+    card5d: 'High-speed fiber interconnect for NVIDIA Quantum-2 / Spectrum-X. MTP/MPO patching, sub-µs latency, all-reduce optimised.',
+    card6h: 'Backup Generation',
+    card6d: 'Diesel + gas + BESS hybrid for instant pickup. Certified for Ukrainian grid and NBU requirements.',
+    casesEye: '04 · DELIVERED IN UKRAINE',
+    casesH2: 'Facilities that <em>work</em>.',
+    casesP: 'Real sites with real PUE — not PowerPoint. Be Mobile — largest commercial DC in Ukraine. United DC — Tier-3 TIA-942. GigaCenter — Top-3 DC in Ukraine.',
+    formH: 'Engineering <em>Consultation</em>',
+    formLede: 'We respond within <b>1 business day</b>. No tender obligations.',
+    formL1: '01 · Facility Type <b>*</b>',
+    formL2: '02 · GPU Racks <b>*</b>',
+    formL3: '03 · Key Requirement <b>*</b>',
+    formL4: '04 · Contact <b>*</b>',
+    formName: 'Name', formEmail: 'Email',
+    formBtn: 'Send Request <span class="arr">→</span>',
+    formGdpr: 'Data used for response only. GDPR · DORA · NBU 143/2025.',
+    navLinks: ['Platform','Stack','Objects','Compliance','Contact'],
+    navBtn: 'Consultation <span class="arr">→</span>',
+    footDesc: 'Engineering integrator, 25 years. Vertiv AI Hub — full AI infrastructure stack from one contractor.',
+  }
+};
+
+let _lang = 'uk';
+
+function switchLang(lang) {
+  if (lang === _lang) return;
+  _lang = lang;
+  const t = LANG[lang];
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => document.querySelectorAll(s);
+
+  // Hero
+  $('.vb-hero h1').innerHTML = t.h1;
+  $('.vb-hero .sub').innerHTML = t.sub;
+  const heroBtns = $$('.vb-hero .cta-row button');
+  if (heroBtns[0]) heroBtns[0].innerHTML = t.heroBtn1;
+  if (heroBtns[1]) heroBtns[1].innerHTML = t.heroBtn2;
+  const cmeta = $('.vb-hero .cta-meta');
+  if (cmeta) cmeta.innerHTML = t.heroCmeta;
+
+  // Problem/Compare
+  const compEyes = $$('.vb-compare .eyebrow');
+  if (compEyes[0]) compEyes[0].innerHTML = '<span class="pip"></span>' + t.probEye;
+  const compH2 = $('.vb-compare h2');
+  if (compH2) compH2.innerHTML = t.probH2;
+  const compP = $('.vb-compare .head > p');
+  if (compP) compP.textContent = t.probP;
+
+  // Stack
+  const stackSec = $('#stack, .vb-stack');
+  if (stackSec) {
+    const eyes = stackSec.querySelectorAll('.eyebrow');
+    if (eyes[0]) eyes[0].innerHTML = '<span class="pip"></span>' + t.stackEye;
+    const h2 = stackSec.querySelector('h2');
+    if (h2) h2.innerHTML = t.stackH2;
+    const p = stackSec.querySelector('.lede, p:not(.desc)');
+    if (p) p.textContent = t.stackP;
+    const cards = stackSec.querySelectorAll('.card');
+    const ch = ['card1h','card2h','card3h','card4h','card5h','card6h'];
+    const cd = ['card1d','card2d','card3d','card4d','card5d','card6d'];
+    cards.forEach((c,i) => {
+      const h4 = c.querySelector('h4');
+      const desc = c.querySelector('.desc');
+      if (h4 && t[ch[i]]) h4.textContent = t[ch[i]];
+      if (desc && t[cd[i]]) desc.textContent = t[cd[i]];
+    });
+  }
+
+  // Cases + Form section
+  const trustSec = $('.vb-trust');
+  if (trustSec) {
+    const left = trustSec.querySelector('.left');
+    if (left) {
+      const eye = left.querySelector('.eyebrow');
+      if (eye) eye.innerHTML = '<span class="pip"></span>' + t.casesEye;
+      const h2 = left.querySelector('h2');
+      if (h2) h2.innerHTML = t.casesH2;
+      const lede = left.querySelector('.lede');
+      if (lede) lede.textContent = t.casesP;
+    }
+    const form = trustSec.querySelector('form');
+    if (form) {
+      const fh4 = form.querySelector('h4');
+      if (fh4) fh4.innerHTML = t.formH;
+      const flede = form.querySelector('.lede');
+      if (flede) flede.innerHTML = t.formLede;
+      const labels = form.querySelectorAll('label');
+      const lks = ['formL1','formL2','formL3','formL4'];
+      labels.forEach((l,i) => { if (t[lks[i]]) l.innerHTML = t[lks[i]]; });
+      const nameIn = form.querySelector('input[name="name"]');
+      const emailIn = form.querySelector('input[type="email"]');
+      if (nameIn) nameIn.placeholder = t.formName;
+      if (emailIn) emailIn.placeholder = t.formEmail;
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.innerHTML = t.formBtn;
+      const micro = form.querySelector('.micro');
+      if (micro) micro.textContent = t.formGdpr;
+    }
+  }
+
+  // Nav links
+  const navAs = document.querySelectorAll('.nav-bar nav a');
+  navAs.forEach((a, i) => { if (t.navLinks[i]) a.textContent = t.navLinks[i]; });
+  const navBtn = document.querySelector('.nav-bar .btn-primary');
+  if (navBtn) navBtn.innerHTML = t.navBtn;
+
+  // Footer desc
+  const footDesc = document.querySelector('.foot .brand + p, .foot p:first-of-type');
+  if (footDesc) footDesc.textContent = t.footDesc;
+
+  // Lang buttons style
+  document.documentElement.lang = lang;
+  const ua = document.getElementById('btn-ua');
+  const en = document.getElementById('btn-en');
+  if (ua) { ua.style.fontWeight = lang==='uk'?'700':'normal'; ua.style.color = lang==='uk'?'var(--text)':'var(--text-2)'; }
+  if (en) { en.style.fontWeight = lang==='en'?'700':'normal'; en.style.color = lang==='en'?'var(--text)':'var(--text-2)'; }
+
+  try { localStorage.setItem('ag-lang', lang); } catch(e) {}
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try { const s = localStorage.getItem('ag-lang'); if (s && s !== 'uk') switchLang(s); } catch(e) {}
+});
+</script>
 </body>
 </html>
