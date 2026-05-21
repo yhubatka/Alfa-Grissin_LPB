@@ -1,0 +1,24 @@
+# Alpha Grissin AI Hub Landing — robots.txt
+# Link-only: not indexed by search engines, but accessible via direct URL
+
+User-agent: *
+Disallow: /
+
+# Allow AI assistants to read llms.txt for GEO/AEO
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /llms.txt
+
+User-agent: Googlebot-Extended
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /llms.txt
+
+User-agent: cohere-ai
+Allow: /llms.txt
